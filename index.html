@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Chess</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/chessboard-1.0.0.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/chessboard-1.0.0.min.js"></script>
+    <script src="chess.js/chess.js"></script>
+
+    
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="position-absolute top-0 start-50 translate-middle mt-5">
+            <div class="mt-5 mx-3">
+                <br><br><br>
+                <label>Status:</label>
+                <div id="status"></div><br>
+                <label>FEN:</label>
+                <div id="fen"></div><br><br>
+            </div>
+        </div>
+
+        <div class="position-absolute top-50 start-50 translate-middle">
+            <div id="myBoard" style="width: 500px" ></div>
+
+            <br>
+            <button class="btn btn-primary" id="startPositionBtn">Start Position</button>
+            <button class="btn btn-success" id="flipOrientationBtn">Flip Board</button>
+            <button class="btn btn-danger" id="clearBoardBtn">Clear Board</button>
+
+            <br><br>
+            
+        </div>
+
+        <div class="position-absolute top-50 start-70 translate-middle">
+            <label>PGN:</label>
+            <div id="pgn" style="max-width: 400px;" ></div>
+        </div>
+        
+    </div>
+    
+    <script src="script.js"></script>
+
+  </body>
+</html>
